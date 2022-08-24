@@ -28,13 +28,6 @@ library(skimr)
 library(gtsummary)
 library(readxl)
 
-#Evitar o cinza 
-  autoInvalidate <- reactiveTimer(10000)
-  observe({
-    autoInvalidate()
-    cat(".")
-  })
-
 #Abrir Dados  
 afastamentos_2021 <- read_excel("base_afastamentos_2021.xlsx")
 
@@ -246,11 +239,12 @@ ui <- fluidPage(theme = paste0("sdcwww/", getShinyOption(".guitheme")),
                           htmlOutput("inc")))
   )),                   
   
-tags$body(tags$style(HTML('*{box-sizing: border-box; font-family: "Montserrat", sans-serif};')))
+tags$body(tags$style(HTML('*{box-sizing: border-box; font-family: "Montserrat", sans-serif};'))),
 
   
-), 
 textOutput("keep_alive")
+) 
+
 
   
 
