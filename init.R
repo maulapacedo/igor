@@ -2,7 +2,7 @@
 #
 #Example R code to install packages if not already installed 
 
-my_packages = c("shiny", "data.table", "dplyr", "ggplot2", "plotly", "shinyWidgets", "shinydashboard", 
+my_packages <- c("shiny", "data.table", "dplyr", "ggplot2", "plotly", "shinyWidgets", "shinydashboard", 
                 "readr", "lubridate", "DT", "gt", "htmlTable", "kableExtra", "magrittr", "skimr",
                 "gtsummary", "readxl", "summarytools")
 
