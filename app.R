@@ -26,7 +26,6 @@ library(kableExtra)
 library(magrittr)
 library(skimr)
 library(gtsummary)
-library(xlsx)
 library(readxl)
 
 
