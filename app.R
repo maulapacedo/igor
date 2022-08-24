@@ -28,6 +28,7 @@ library(skimr)
 library(gtsummary)
 library(readxl)
 library(summarytools)
+library(magick)
 
 
 #Abrir Dados  
