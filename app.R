@@ -27,8 +27,6 @@ library(magrittr)
 library(skimr)
 library(gtsummary)
 library(readxl)
-library(summarytools)
-
 
 
 #Abrir Dados  
