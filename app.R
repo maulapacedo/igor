@@ -249,10 +249,10 @@ ui <- fluidPage(theme = paste0("sdcwww/", getShinyOption(".guitheme")),
 tags$body(tags$style(HTML('*{box-sizing: border-box; font-family: "Montserrat", sans-serif};')))
 
   
-)
+), 
+textOutput("keep_alive")
 
   
-
 
 #-------------------------------------------------------------------------------#
 
@@ -439,6 +439,10 @@ server <- function(input, output, session){
       layout(xaxis = list(title = "Histograma - Valor da Hora Técnica em 2021")) 
     })
   
+  output$keep_alive <- renderText({
+  req(input$alive_count)
+  input$alive_count
+})
   
 }
 
