@@ -11,8 +11,3 @@ shiny::runApp(
   port = as.numeric(port)
 )
 
-  autoInvalidate <- reactiveTimer(10000)
-  observe({
-    autoInvalidate()
-    cat(".")
-  })
