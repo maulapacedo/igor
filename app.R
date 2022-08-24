@@ -28,6 +28,12 @@ library(skimr)
 library(gtsummary)
 library(readxl)
 
+#Evitar o cinza 
+  autoInvalidate <- reactiveTimer(10000)
+  observe({
+    autoInvalidate()
+    cat(".")
+  })
 
 #Abrir Dados  
 afastamentos_2021 <- read_excel("base_afastamentos_2021.xlsx")
